@@ -1,19 +1,28 @@
-// celsius to farenheit :
-// C = (X * 9/5 + 32) F
+const paragraph = document.createElement("p");
+paragraph.textContent = "Hey I'm red!";
+paragraph.style.color = "red";
 
-// farenheit to celsius:
-// F =  (x-32) * 5/9 C
-
-function convertToCelsius(tempInFarenheit){
-    celsius = (tempInFarenheit - 32) * 5/9
-    return `Temperature is ${celsius.toFixed(1)} degree celsius.`
-}
-
-function convertToFarenheit(tempInFarenheit){
-    farenheit = (tempInFarenheit * 9/5 + 32)
-    return `Temperature is ${farenheit.toFixed(1)} degree farenheit.`
-}
+document.body.append(paragraph);
 
 
-console.log(convertToCelsius(32))
-console.log(convertToFarenheit(0))
+const heading3 = document.createElement("h3");
+heading3.style.color = "blue";
+heading3.textContent = "I'm a blue h3!";
+
+document.body.append(heading3)
+
+
+
+const div = document.createElement("div");
+
+div.style.border = "black";
+div.style.backgroundColor = "pink"
+
+const heading1 = document.createElement("h1");
+heading1.textContent = "I'm in a div!";
+
+const newPara = document.createElement("p");
+newPara.textContent = "ME TOO!";
+
+div.append(heading1,newPara)
+document.body.append(div)
